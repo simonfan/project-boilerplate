@@ -1,6 +1,6 @@
 require.config({
 	urlArgs: "bust=" + Math.random(),
-	baseUrl: 'js',
+	baseUrl: 'src/js',
 	paths: {
 		'jquery': 'lib/jquery',
 		'underscore': 'lib/underscore',

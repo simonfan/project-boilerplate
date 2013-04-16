@@ -3,7 +3,7 @@ require.config({
 	baseUrl: '',
 	paths: {
 		// the module files go here
-		'example-module': '../../js/modules/example-module',
+		'example-module': '../../src/js/modules/example-module',
 
 		// DEMO
 		'demo-main': 'demo/demo',	// the main file for the demo
