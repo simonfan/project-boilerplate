@@ -1,12 +1,16 @@
 require.config({
 	urlArgs: "bust=" + Math.random(),
-	baseUrl: 'src/js',
+	baseUrl: 'src',
 	paths: {
-		'jquery': 'lib/jquery',
-		'underscore': 'lib/underscore',
-		'backbone': 'lib/backbone',
+		'jquery': 'js/lib/jquery',
+		'underscore': 'js/lib/underscore',
+		'backbone': 'js/lib/backbone',
 		
-		'app': 'app',
+		'main': 'js/main',
+		'app': 'js/app',
+
+		// modules
+		'example-module': 'js/modules/example-module',
 	},
 	shim: {
 		'backbone': {
@@ -17,7 +21,4 @@ require.config({
 });
 	
 // load the main app page
-require(['app'], function(app) {
-	
-});
-
+require(['app']);
