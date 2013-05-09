@@ -2,6 +2,9 @@ require.config({
 	urlArgs: "bust=" + Math.random(),
 	baseUrl: '',
 	paths: {
+		// basic libraries
+		'underscore': '../lib/underscore',
+
 		// the module files go here
 		'example-module': '../../src/js/modules/example-module',
 
@@ -12,7 +15,6 @@ require.config({
 		'tests-main': 'tests/tests',	// the main file for tests
 
 		// other tests go here
-		'unwrapped-tests': 'tests/unwrapped-tests',
 		'wrapped-tests': 'tests/wrapped-tests',
 	},
 	shim: {
@@ -23,7 +25,7 @@ require.config({
 if (window.__unit) {
 
 	// load the tests
-	require(['example-module','tests-main'], function(Example, undef) {
+	require(['tests-main'], function(undef) {
 
 		// tests were already run in the main tests file
 
