@@ -2,14 +2,20 @@ require.config({
 	urlArgs: "bust=" + Math.random(),
 	baseUrl: 'src',
 	paths: {
-		'jquery': 'js/lib/jquery',
-		'underscore': 'js/lib/underscore',
-		'backbone': 'js/lib/backbone',
+		// basic external libraries
+		'jquery': 'components/jquery',
+		'underscore': 'components/underscore',
+		'backbone': 'components/backbone',
 		
 		'main': 'js/main',
 		'app': 'js/app',
 
 		// modules
+		// basic own modules
+		'setup': 'js/modules/setup',
+		'mixins': 'js/modules/mixins',
+		'buildable': 'js/modules/buildable',
+
 		'example-module': 'js/modules/example-module',
 	},
 	shim: {

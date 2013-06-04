@@ -1,15 +1,27 @@
-define([], function() {
+define(['jquery','buildable','backbone','underscore','mixins'], 
+function(   $   , Buildable , Backbone , undef      , undef  ) {
+
 	console.log('example module running');
 
-	var Constructor = function(options) {
-		this.options = options;
-	};
+	var Obj = Object.create(Buildable);
 
-	Constructor.prototype.exampleMethod = function() {
-		console.log('Hello world! Thank you for calling example method.');
+	Obj.extend(Backbone.Events, {
+		init: function(data) {
+			_.interface({
+				id: 'Example interface',
+				obj: data,
+				typeofs: {
+					message: 'string'
+				}
+			});
 
-		return 'Hello world!';
-	}
+			this.message = data.message;
+		},
 
-	return Constructor;
+		speak: function() {
+			console.log(this.message)
+		}
+	});
+
+	return Obj;
 });

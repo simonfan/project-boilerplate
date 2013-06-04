@@ -3,7 +3,15 @@ require.config({
 	baseUrl: '',
 	paths: {
 		// basic libraries
-		'underscore': '../lib/underscore',
+		'jquery': '../../src/components/jquery',
+		'underscore': '../../src/components/underscore',
+		'backbone': '../../src/components/backbone',
+
+		// modules
+		// basic own modules
+		'setup': '../../src/js/modules/setup',
+		'mixins': '../../src/js/modules/mixins',
+		'buildable': '../../src/js/modules/buildable',
 
 		// the module files go here
 		'example-module': '../../src/js/modules/example-module',
@@ -15,10 +23,13 @@ require.config({
 		'tests-main': 'tests/tests',	// the main file for tests
 
 		// other tests go here
-		'wrapped-tests': 'tests/wrapped-tests',
+		'example-tests': 'tests/example-tests',
 	},
 	shim: {
-
+		'backbone': {
+			deps: ['underscore', 'jquery'],
+			exports: 'Backbone'
+		}
 	}
 });
 	
