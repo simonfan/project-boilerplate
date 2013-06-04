@@ -9,7 +9,7 @@
 ({
 	appDir: "../src",
 	baseUrl: ".",
-	dir: "../build-result",
+	dir: "../built",
 	mainConfigFile: '../src/js/main.js',
 
 	modules: [

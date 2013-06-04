@@ -3,15 +3,15 @@ require.config({
 	baseUrl: '',
 	paths: {
 		// basic libraries
-		'jquery': '../../src/components/jquery',
-		'underscore': '../../src/components/underscore',
-		'backbone': '../../src/components/backbone',
+		'jquery': '../../src/components/jquery/jquery',
+		'underscore': '../../src/components/underscore/underscore',
+		'backbone': '../../src/components/backbone/backbone',
 
 		// modules
 		// basic own modules
-		'setup': '../../src/js/modules/setup',
-		'mixins': '../../src/js/modules/mixins',
-		'buildable': '../../src/js/modules/buildable',
+	//	'setup': '../../src/js/modules/setup',
+	//	'mixins': '../../src/js/modules/mixins',
+	//	'buildable': '../../src/js/modules/buildable',
 
 		// the module files go here
 		'example-module': '../../src/js/modules/example-module',
