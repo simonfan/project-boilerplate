@@ -7,6 +7,9 @@
 		"backbone": "latest",
 		"requirejs": "latest",
 
+		"colorpicker": "https://github.com/simonfan/colorpicker.git",
+		"panels": "https://github.com/simonfan/panels.git",
+
 	    "qunit": "latest"
 	},
 
